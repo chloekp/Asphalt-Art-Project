@@ -19,7 +19,7 @@ This project was created on Code.org's JavaLab platform using the built in Neigh
 
 ## Output:
 
-![My sketch!](file:///media/fuse/drivefs-e7aa4038249b457fc72a184af452dbcd/root/asphaltartsketch.jpg)
+![My sketch!](https://github.com/chloekp/Asphalt-Art-Project/blob/main/asphaltartsketch.jpg?raw=true)
 
 
 ## Reflection
