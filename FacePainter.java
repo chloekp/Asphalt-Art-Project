@@ -1,0 +1,310 @@
+import org.code.neighborhood.*;
+
+/* FacePainter extends PainterPlus and paints
+a smiley face in the neighborhood */
+
+public class FacePainter extends LinePainter {
+
+  /* movetoStart - moves painter to start of drawing of 
+  smiley face at (14, 6) */
+  
+  public void moveToStart () {
+    moveSpaces(14);
+
+    turnRight();
+
+    moveSpaces(6);
+
+    turnLeft();
+  }
+
+  /*paintBase - paints yellow base of smiley face*/
+  
+  public void paintBase (){
+    paintLine("yellow", 6);
+    move();
+    turnRight();
+    move();
+    turnRight();
+    paintLine("yellow",10);
+    move();
+    turnLeft();
+    move();
+    turnLeft();
+    paintLine("yellow",14);
+    move();
+    turnRight();
+    move();
+    turnRight();
+    move();
+    paintLine("yellow",16);
+    turnLeft();
+    move();
+    turnLeft();
+    paintLine("yellow",18);
+    turnRight();
+    move();
+    turnRight();
+    move();
+    paintLine("yellow",18);
+    turnLeft();
+    move();
+    turnLeft();
+    paintLine("yellow",20);
+    turnRight();
+    move();
+    turnRight();
+    move();
+    paintLine("yellow",20);
+    move();
+    turnLeft();
+    move();
+    turnLeft();
+    move();
+    paintLine("yellow",22);
+    turnRight();
+    move();
+    turnRight();
+    move();
+    paintLine("yellow",22);
+    turnLeft();
+    move();
+    turnLeft();
+    move();
+    paintLine("yellow",22);
+    turnRight();
+    move();
+    turnRight();
+    move();
+    paintLine("yellow",22);
+    turnLeft();
+    move();
+    turnLeft();
+    move();
+    paintLine("yellow",22);
+    turnRight();
+    move();
+    turnRight();
+    move();
+    paintLine("yellow",22);
+    turnLeft();
+    move();
+    turnLeft();
+    move();
+    move();
+    paintLine("yellow",20);
+    turnRight();
+    move();
+    turnRight();
+    move();
+    paintLine("yellow",20);
+    turnLeft();
+    move();
+    turnLeft();
+    move();
+    move();
+    paintLine("yellow",18);
+    turnRight();
+    move();
+    turnRight();
+    move();
+    paintLine("yellow",18);
+    turnLeft();
+    move();
+    turnLeft();
+    move();
+    move();
+    paintLine("yellow",16);
+    turnRight();
+    move();
+    turnRight();
+    move();
+    move();
+    paintLine("yellow",14);
+    turnLeft();
+    move();
+    turnLeft();
+    move();
+    move();
+    move();
+    paintLine("yellow",10);
+    turnRight();
+    move();
+    turnRight();
+    move();
+    move();
+    move();
+    paintLine("yellow",6);
+  }
+
+/* paintOutline -  outlines base of smiley face in black paint */
+  
+  public void paintOutline(){
+    paintLine("black",2);
+    turnRight();
+    move();
+    turnLeft();
+    paintLine("black",2);
+    turnRight();
+    move();
+    turnLeft();
+    paintLine("black", 1);
+    turnRight();
+    move();
+    paintLine("black", 1);
+    turnLeft();
+    move();
+    turnRight();
+    paintLine("black", 2);
+    turnLeft();
+    move();
+    turnRight();
+    paintLine("black", 2);
+    turnLeft();
+    move();
+    turnRight();
+    paintLine("black", 6);
+    turnRight();
+    move();
+    turnLeft();
+    paintLine("black", 2);
+    turnRight();
+    move();
+    turnLeft();
+    paintLine("black", 2);
+    turnRight();
+    move();
+    turnLeft();
+    paintLine("black", 1);
+    turnRight();
+    move();
+    turnLeft();
+    paintLine("black", 1);
+    turnRight();
+    move();
+    paintLine("black", 2);
+    turnLeft();
+    move();
+    turnRight();
+    paintLine("black", 2);
+    turnLeft();
+    move();
+    turnRight();
+    paintLine("black", 6);
+    turnRight();
+    move();
+    turnLeft();
+    paintLine("black", 2);
+    turnRight();
+    move();
+    turnLeft();
+    paintLine("black", 2);
+    turnRight();
+    move();
+    turnLeft();
+    paintLine("black", 1);
+    turnRight();
+    move();
+    turnLeft();
+    paintLine("black", 1);
+    turnRight();
+    move();
+    paintLine("black", 2);
+    turnLeft();
+    move();
+    turnRight();
+    paintLine("black", 2);
+    turnLeft();
+    move();
+    turnRight();
+    paintLine("black", 6);
+    turnRight();
+    move();
+    turnLeft();
+    paintLine("black", 2);
+    turnRight();
+    move();
+    turnLeft();
+    paintLine("black", 2);
+    turnRight();
+    move();
+    turnLeft();
+    paintLine("black", 1);
+    turnRight();
+    move();
+    turnLeft();
+    paintLine("black", 1);
+    turnRight();
+    move();
+    paintLine("black", 2);
+    turnLeft();
+    move();
+    turnRight();
+    paintLine("black", 2);
+    turnLeft();
+    move();
+    turnRight();
+    paintLine("black", 6);
+  }
+  /* paintFace - paints eyes and mouth of smiley face */
+   public void paintFace(){
+     turnRight();
+     moveSpaces(13);
+     paintLine("black", 3);
+     turnLeft();
+     paintLine("black", 2);
+     turnLeft();
+     paintLine("black", 3);
+     turnLeft();
+     paintLine("black", 2);
+     moveSpaces(7);
+     paintLine("black", 2);
+     turnLeft();
+     paintLine("black", 3);
+     turnLeft();
+     paintLine("black", 2);
+     turnLeft();
+     paintLine("black", 3);
+     moveSpaces(4);
+     turnLeft();
+     moveSpaces(2);
+     paint("black");
+     moveSpaces(2);
+     turnRight();
+     move();
+     turnRight();
+     paintLine("black",2);
+     turnLeft();
+     move();
+     turnRight();
+     paintLine("black",2);
+     turnLeft();
+     move();
+     turnRight();
+     paintLine("black",2);
+     turnLeft();
+     move();
+     turnRight();
+     paintLine("black",4);
+     turnRight();
+     move();
+     turnLeft();
+     paintLine("black",2);
+     turnRight();
+     move();
+     turnLeft();
+     paintLine("black",2);
+     turnRight();
+     move();
+     turnLeft();
+     paintLine("black",2);
+     turnLeft();
+     turnLeft();
+     moveSpaces(3);
+     turnLeft();
+     move();
+     paint("black");
+     
+     
+    }
+}
